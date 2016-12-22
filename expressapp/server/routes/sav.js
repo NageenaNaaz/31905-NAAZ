@@ -14,6 +14,7 @@ router.post("/add1",function(req,res) {
     uservar.url=req.body.url;
     uservar.urlToImage=req.body.urlToImage;
     uservar.publishedAt=req.body.publishedAt;
+    uservar.comment=req.body.comment;
     uservar.save(function(err){
     if(err) {
       res.send(err);

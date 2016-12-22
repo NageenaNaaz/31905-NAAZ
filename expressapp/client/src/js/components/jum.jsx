@@ -6,6 +6,7 @@ constructor()
  this.saveNews=this.saveNews.bind(this);
 }
 
+
 saveNews(){
 $.ajax({
  url: "http://localhost:8141/sav/add1",
@@ -33,7 +34,7 @@ return(
             <ul className='list-group'>
                 <li className='list-group-item'>Description :{this.props.data22.description}</li>
             </ul>
-        <button type="button" className="btn btn-primary" onClick={this.saveNews}>Save</button>
+        <button type="button" className="btn btn-success" onClick={this.saveNews}>Save</button>
       </div>
     </div>
   </div>

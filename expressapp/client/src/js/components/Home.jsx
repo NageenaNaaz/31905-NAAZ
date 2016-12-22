@@ -4,7 +4,7 @@ import ChildComponent from './ChildComponent.jsx';
 import Getnews from './Getnews.jsx';
 
 
-export default class MainComponent extends React.Component{
+export default class Home extends React.Component{
   constructor()
   {
     super();

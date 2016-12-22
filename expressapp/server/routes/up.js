@@ -6,18 +6,20 @@ var sav = require('../model/sav');
 router.put("/update",function(req,res)
 {
   var tit=req.body.title;
-  var des=req.body.description;
+  var com=req.body.comment;
   if(req.body)
   {
-      sav.update({title:tit},{$set:{description:des}})
-      {
+      sav.update({title:tit},{$set:{comment:com}},function(err)     {
         if(err) {
+          console.log("Heloo");
           res.send(err);
         }
         else  {
+          console.log("Heloo in else");
         res.send("updated");
         }
-      }
+      });
+  
   }
 });
 

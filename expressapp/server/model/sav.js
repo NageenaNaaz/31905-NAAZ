@@ -10,7 +10,8 @@ var BlogPost = new Schema(
     description   : String,
     url     : String,
     urlToImage : String,
-    publishedAt : String
+    publishedAt : String,
+    comment: String
 });
 
 module.exports=mongoose.model('BlogPost',BlogPost);

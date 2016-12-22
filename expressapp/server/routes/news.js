@@ -24,7 +24,7 @@ router.delete('/', function(req, res, next) {
 
 
 /*http://localhost:8083/news/*/
-router.put('/update', function(req, res, next) {
+router.put('/', function(req, res, next) {
   res.json(req.body.title);
 
   console.log(a);
